@@ -41,7 +41,7 @@ const UserBox = styled(Box)(({ theme }) => ({
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <AppBar position="fixed" sx={{ padding: "10px 0" }}>
+    <AppBar position="fixed" sx={{ padding: "15px 0" }}>
       <StyledToolbar variant="h6">
         <Typography
           variant="h6"
@@ -49,7 +49,7 @@ const Navbar = () => {
             display: { xs: "none", sm: "block" },
           }}
         >
-          HammadDev
+          MaterialUI
         </Typography>
         <Segment
           sx={{

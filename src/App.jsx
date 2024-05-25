@@ -15,7 +15,7 @@ const App = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor={"background.default"} color={"text.primary"}>
-        <Navbar />
+        <Navbar mode={mode} />
         <Stack
           direction={"row"}
           alignItems={"start"}

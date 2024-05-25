@@ -26,7 +26,7 @@ const Search = styled("div")(({ theme }) => ({
   width: "40%",
 }));
 
-const Icons = styled(Box)(({}) => ({
+const Icons = styled(Box)(({ }) => ({
   display: "flex",
   alignItems: "center",
   gap: "20px",
@@ -38,7 +38,7 @@ const UserBox = styled(Box)(({ theme }) => ({
   gap: "10px",
 }));
 
-const Navbar = () => {
+const Navbar = ({ mode }) => {
   const [open, setOpen] = useState(false);
   return (
     <AppBar position="fixed" sx={{ padding: "15px 0" }}>
@@ -56,8 +56,13 @@ const Navbar = () => {
             display: { xs: "block", sm: "none" },
           }}
         />
-        <Search>
-          <InputBase placeholder="Search..."></InputBase>
+        <Search sx={{
+          color: "red"
+        }}>
+          <InputBase placeholder="Search..." sx={{
+            width: "100%",
+            color: "black"
+          }}></InputBase>
         </Search>
         <Icons sx={{ display: { xs: "none", md: "flex" } }}>
           <Badge badgeContent={4} color="error" sx={{ cursor: "pointer" }}>

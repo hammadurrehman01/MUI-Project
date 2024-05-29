@@ -79,7 +79,7 @@ const Sidebar = ({ mode, setmode }) => {
               <ListItemIcon>
                 <DarkMode />
               </ListItemIcon>
-              <Switch onChange={() => setmode(mode === 'light' ? 'dark' : 'light')} />
+              <Switch onChange={() => setmode(mode === 'light' ? 'light' : 'dark')} />
             </ListItemButton>
           </ListItem>
         </List>

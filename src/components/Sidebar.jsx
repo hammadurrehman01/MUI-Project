@@ -30,7 +30,7 @@ const Sidebar = ({ mode, setmode }) => {
         sx={{
           position: "fixed",
           top: "6rem",
-          //  boxShadow: "10px black"
+          boxShadow: "10px black"
         }}
       >
         <List>

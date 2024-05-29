@@ -4,7 +4,7 @@ import "../index.css";
 import { useState } from "react";
 
 const App = () => {
-  const [mode, setmode] = useState("dark");
+  const [mode, setmode] = useState("light");
 
   const darkTheme = createTheme({
     palette: {
@@ -15,13 +15,13 @@ const App = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor={"background.default"} color={"text.primary"}>
-        <Navbar />
+        <Navbar mode={mode} />
         <Stack
           direction={"row"}
           alignItems={"start"}
           justifyContent={"space-between"}
           spacing={1}
-          mt={8}
+          pt={8}
         >
           <Sidebar mode={mode} setmode={setmode} />
           <Feed />
